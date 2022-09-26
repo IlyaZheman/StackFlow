@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3271763519705567312
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3271763519705567315}
+  - component: {fileID: 3271763519705567317}
+  - component: {fileID: 3271763519705567314}
+  m_Layer: 0
+  m_Name: Projectile Replenishment Point Spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3271763519705567315
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3271763519705567312}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3271763519705567317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3271763519705567312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0f60c52ac974a6b9e0827503e47629e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializedData:
+    transform: {fileID: 3271763519705567315}
+--- !u!114 &3271763519705567314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3271763519705567312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1f6f367f9744d658baf42e255435fcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializedData:
+    ReplenishmentPoints:
+    - {fileID: 7706593972128974039, guid: 2f457f6adb7eb3d468af18b617b52aaa, type: 3}
+    - {fileID: 7293616534589105485, guid: 074065f12ad64a149ba117f8c123e803, type: 3}
+    - {fileID: 2612719147660380267, guid: dbc58365e6de361469e489e9d7fd5629, type: 3}
+    Weights: 32000000230000000f000000
+    Countdown: 3
+    MaxPoints: 3
+    MaxDistance: 10
